@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Clinicreact/static/css/main.d3d4b68e.css",
+    "main.js": "/Clinicreact/static/js/main.6e8c85d4.js",
+    "static/js/787.c49faf0a.chunk.js": "/Clinicreact/static/js/787.c49faf0a.chunk.js",
+    "static/media/slider_2.jpg": "/Clinicreact/static/media/slider_2.99e8ec8ce9ac32c2b0ef.jpg",
+    "index.html": "/Clinicreact/index.html",
+    "main.d3d4b68e.css.map": "/Clinicreact/static/css/main.d3d4b68e.css.map",
+    "main.6e8c85d4.js.map": "/Clinicreact/static/js/main.6e8c85d4.js.map",
+    "787.c49faf0a.chunk.js.map": "/Clinicreact/static/js/787.c49faf0a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3d4b68e.css",
+    "static/js/main.6e8c85d4.js"
+  ]
+}
