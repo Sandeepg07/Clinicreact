@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+
+.full-page-image {
+  background-image: url("../public/assets/images/slider/slider_2.jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.full-page-image-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pageStyle {
+  background-image: url('../public/assets/images/slider/slider_2.jpg'); /* Use / to indicate the root directory */
+  background-size: cover; /* No quotes around 'cover' */
+  background-position: center; /* No quotes around 'center' */
+  background-repeat: no-repeat; /* No quotes around 'no-repeat' */
+  min-height: 100vh; /* No quotes around '100vh' */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  ::placeholder{
+    color:black;
+    font-size: large;
+  }
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media screen and (max-width: 450px) {
+  header .header-nav .nav-item ul li {
+    float: none;
+    padding: 14px;
+    border-top: 1px solid #CCC; 
+  }
+  .menu{
+    display: block;
+    float: none;
+     background: transparent;
+    /* backdrop-filter: blur(20px); */
+    position: fixed;
+    padding-top: 80px;
+    top: 0px;
+    right: 0px;
+    width: 250px;
+    height: 100vh;
+    z-index: 2;
+    transition: right 0.5s;
+   
 }
+  .menu li{
+    display: block;
+    margin: 25px;
+  
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  }
+  .menu .fas{
+  
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    padding: 30px;
+    top: 25px;
+    left: 25px;
+    color: #99CC43;
+    font-size: 35px;
+  }
+  .mapp{
+    display: none;
+
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+.form-container{
+  border: none;
+  text-align: center; /* Center the form horizontally */
+  max-width: 1600px; /* Set a maximum width for the form */
+  margin: 0 auto; /* Center the container itself */
+  padding: 20px; /* Add padding to the container */
+
+} 
+.form-container form{
+  background: transparent;
+  background-color: rgba(14, 1, 1, 0.5);
+  border: rounded;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.form-container form input{
+  font-size: larger;
+  color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 768px) {
+  .form-container {
+    max-width: 90%; /* Adjust the width for smaller screens */
   }
 }
